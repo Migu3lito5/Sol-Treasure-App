@@ -1,12 +1,20 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { ScrollView, StyleSheet, Text, View, SafeAreaView} from 'react-native';
+import { SafeAreaProvider} from 'react-native-safe-area-context';
+import EventCard from './components/EventCard';
+
 
 export default function App() {
   return (
+    <ScrollView>
+    <SafeAreaView>
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <EventCard imageSource={require('./assets/SPS-Eng.png')} />
+      <EventCard imageSource={require('./assets/Fall-Guitar-Eng.png')} />        
+      <EventCard imageSource={require('./assets/Any-Ofrenda-Eng-1.png')} />
+      <EventCard imageSource={require('./assets/SPS-Eng.png')} />
     </View>
+    </SafeAreaView>
+    </ScrollView>
   );
 }
 
@@ -15,6 +23,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     alignItems: 'center',
-    justifyContent: 'center',
   },
 });
+
