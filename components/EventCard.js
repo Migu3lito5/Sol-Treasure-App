@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
   },
   dateText: {
     fontWeight: 'bold',
-    fontSize: 14,
+    fontSize: 15,
     color: 'orange',
   },
   title: {
