@@ -12,7 +12,7 @@ export default function EventCard(props) {
         </View>
         <Text style={styles.title}>Sol Performing Strings</Text>
         <Text style={styles.description}>
-          Join our instructor Aya Ettinger and learn or expand on your violin skills!
+          519 Broadway St., King City, United States
         </Text>
       </View>
     </View>
@@ -23,16 +23,19 @@ const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
     height: "auto",
-    margin: 10,
+    margin: 7,
   },
   imageContainer: {
-    aspectRatio: 1, 
-    width: "auto",// To maintain a 1:1 aspect ratio
+    aspectRatio: 0.8, 
+    margin: 5,
+    flexDirection: 'column',
+    justifyContent: "center",
   },
   image: {
     width: '100%',
     height: '100%',
-    resizeMode: "contain",
+    resizeMode: "cover",
+    borderRadius: 7,
   },
   cardInfo: {
     padding: 15,
