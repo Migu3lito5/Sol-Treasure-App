@@ -1,9 +1,11 @@
-import { NavigationContainer } from '@react-navigation/native';
+import { NavigationContainer, DefaultTheme } from '@react-navigation/native';
 import { createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { Ionicons, FontAwesome5 } from '@expo/vector-icons'; 
 import Events from './screen/TabScreens/Events';
 import Home from './screen/TabScreens/Home';
 
+const navTheme = DefaultTheme;
+navTheme.colors.background = '#fffefc';
 // Creates the Bottom Tab Navigator 
 const Tab = createBottomTabNavigator();
 
@@ -14,6 +16,7 @@ function TabGroup() {
     // Grabbed the icons from the vector-icons
     <Tab.Navigator
       screenOptions={({route, navigation}) => ({
+        headerTitleAlign: 'center',
         tabBarIcon: ({color, focused, size}) => {
           let iconName;
           if(route.name === "Home") {
@@ -31,8 +34,8 @@ function TabGroup() {
       })}
     >
       {/* These are the current tabs in the Tab Navigator */}
-      <Tab.Screen name="Home" component={Home}  />
-      <Tab.Screen name="Events" component={Events} />
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Events" component={Events}/>
     </Tab.Navigator>
   )
 }
