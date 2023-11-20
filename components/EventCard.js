@@ -22,8 +22,8 @@ export default function EventCard({imageURL, date, title, location}) {
 
 // Input Example : 2023-11-11 18:00:00
 const formatDate = (date) => {
-  const month = +date.substring(8,10);
-  const day = date.substring(5,7);
+  const day = +date.substring(8,10);
+  const month = date.substring(5,7);
   const year = date.substring(0,4);
   
   const monthNames = {
@@ -61,7 +61,7 @@ const formatTitle = (title) => {
 const styles = StyleSheet.create({
   card: {
     flexDirection: 'row',
-    margin: 7,
+    margin: 20,
     marginTop: 10,
   },
   imageContainer: {
