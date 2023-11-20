@@ -35,7 +35,7 @@ const BackgroundImageCard = ({
       backgroundColor: 'rgba(0, 0, 0, 0.5)',
     },
     heading: {
-      fontSize: 24,
+      fontSize: 30,
       fontWeight: 'bold',
       marginBottom: 10,
       color: 'white',

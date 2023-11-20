@@ -10,7 +10,6 @@ export default function Events() {
 
   return (
     <SafeAreaView>
-      <Header/>
       {
         isLoading ? (<ActivityIndicator size="large" color="orange" />) 
           : data ? (
