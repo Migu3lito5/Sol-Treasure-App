@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, ScrollView, ActivityIndicator } from 'react-native';
 import EventCard from '../../components/EventCard';
-import { useQuery } from 'react-query';
+import Header from '../../components/Header';
 import { UseGetEventsData, fetchEventList } from '../../services/EventsAPI';
 
 
