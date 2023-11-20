@@ -10,7 +10,6 @@ const Home = () => {
     <SafeAreaView style={styles.container}>
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <Header />
-        // Todo: Make this better looks too messy 
         <BackgroundImageCard
           imageSource={require('../../assets/home1.jpg')}
           margin={10}

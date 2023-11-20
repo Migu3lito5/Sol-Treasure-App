@@ -18,7 +18,6 @@ function TabGroup() {
     <Tab.Navigator
       screenOptions={({route, navigation}) => ({
         headerTitleAlign: 'center',
-        headerShown: false,
         tabBarIcon: ({color, focused, size}) => {
           let iconName;
           switch (route.name) {
